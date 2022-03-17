@@ -1,4 +1,4 @@
-# Nome do produto
+# CTM - Controle técnico de manutenção
 > Descrição curta sobre o que seu projeto faz.
 
 [![NPM Version][npm-image]][npm-url]
