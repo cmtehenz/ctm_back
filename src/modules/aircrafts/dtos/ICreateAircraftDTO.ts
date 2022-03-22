@@ -13,4 +13,5 @@ export default interface ICreateAircraftDTO {
   hora_motor: number;
   n1: number;
   n2: number;
+  pousos: number;
 }

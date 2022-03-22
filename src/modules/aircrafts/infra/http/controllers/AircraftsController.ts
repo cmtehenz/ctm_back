@@ -21,6 +21,7 @@ export default class AircraftsController {
       hora_motor,
       n1,
       n2,
+      pousos,
     } = req.body;
 
     const createAircraft = container.resolve(CreateAircraftService);
@@ -40,6 +41,7 @@ export default class AircraftsController {
       hora_motor,
       n1,
       n2,
+      pousos,
     });
 
     return res.json(classToClass(aircraft));

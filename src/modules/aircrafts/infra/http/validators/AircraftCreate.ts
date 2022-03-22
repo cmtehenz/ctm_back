@@ -16,5 +16,6 @@ export default celebrate({
     hora_motor: Joi.number().required(),
     n1: Joi.number().required(),
     n2: Joi.number().required(),
+    pousos: Joi.number().required(),
   },
 });

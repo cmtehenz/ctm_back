@@ -56,6 +56,9 @@ class Aircraft {
   @Column()
   n2: number;
 
+  @Column()
+  pousos: number;
+
   @CreateDateColumn()
   created_at: Date;
 

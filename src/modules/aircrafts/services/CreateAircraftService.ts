@@ -22,6 +22,7 @@ interface IRequest {
   hora_motor: number;
   n1: number;
   n2: number;
+  pousos: number;
 }
 
 @injectable()
@@ -49,6 +50,7 @@ class CreateAircraftService {
     hora_motor,
     n1,
     n2,
+    pousos,
   }: IRequest): Promise<Aircraft> {
     const checkAircraftExists = await this.aircraftsRepository.findByPrefixo(
       prefixo,
@@ -73,6 +75,7 @@ class CreateAircraftService {
       hora_motor,
       n1,
       n2,
+      pousos,
     });
 
     return aircraft;
