@@ -24,7 +24,7 @@ app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use(rateLimiter);
 
 app.get('/', (req, res) => {
-  res.json('teste');
+  res.json('teste se funcionar : ok');
 });
 
 app.use(routes);
