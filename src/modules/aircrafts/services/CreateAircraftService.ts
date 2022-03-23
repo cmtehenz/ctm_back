@@ -1,6 +1,5 @@
 import { injectable, inject } from 'tsyringe';
 
-import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
 import AppError from '@shared/errors/AppError';
 
 import Aircraft from '@modules/aircrafts/infra/typeorm/entities/Aircraft';
@@ -30,9 +29,6 @@ class CreateAircraftService {
   constructor(
     @inject('AircraftsRepository')
     private aircraftsRepository: IAircraftsRepository,
-
-    @inject('CacheProvider')
-    private cacheProvider: ICacheProvider,
   ) {}
 
   public async execute({
