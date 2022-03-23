@@ -5,3 +5,4 @@ coverage
 yarn.lock
 yarn-error.log
 .vscode
+dist
